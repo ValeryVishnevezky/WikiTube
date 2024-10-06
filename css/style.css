@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(64, 25, 25);
+}
+
+.logo {
+  width: 250px;
+}
+
+.navbar {
+  padding: 10px;
+  background-color: rgb(36, 10, 10);
+}
+
+.search-btn {
+  padding: 5px;
+  width: 90px;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #c81a0a;
+}
+
+.main-content {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(600px, auto));
+  align-items: start;
+  justify-content: center;
+  gap: 40px;
+  color: white;
+}
+
+.videos-content {
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: fit-content;
+  padding-right: 40px;
+}
+
+.videos-content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  background-color: rgb(36, 10, 10);
+}
+
+.video {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  border-radius: 1rem;
+  background-color: rgb(36, 10, 10);
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+}
+
+.video img {
+  width: 300px;
+  border-radius: 0.5rem;
+}
+
+.video-title {
+  font-size: 1.1rem;
+}
+
+.channel-title,
+.channel-player-channel-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.video-content,
+.video-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1.3rem;
+  background-color: rgb(36, 10, 10);
+}
+
+.video-content {
+  padding-bottom: 30px;
+}
+
+iframe {
+  border-radius: 1rem;
+}
+
+.player-info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+  width: 540px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.video-player-title {
+  font-size: 1.3rem;
+  letter-spacing: 0.05rem;
+}
+.video-player-description {
+  width: 540px;
+  letter-spacing: 0.03rem;
+}
+
+.channel-player-channel-title {
+  color: #f04536;
+  font-size: 1.2rem;
+  align-self: end;
+  letter-spacing: 0.05rem;
+}
+
+.video-info {
+  position: relative;
+  padding-top: 40px;
+  width: 540px;
+}
+
+.video-info::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: white;
+}
+
+.about {
+  font-size: 1.3rem;
+  letter-spacing: 0.05rem;
+}
+
+.info-description {
+  font-size: 1rem;
+  letter-spacing: 0.03rem;
+}
